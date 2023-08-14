@@ -5,6 +5,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    //甜品類型
+    public enum SweetsType
+    {
+        EMPTY,
+        NORMAL,
+        BARRIER,
+        ROW_CLEAR,
+        COLUMN_CLEAR,
+        RAINBOWCANDY,
+        COUNT //標記類型
+    }
+
     //單例
     private static GameManager _instance;
     public GameManager Instance

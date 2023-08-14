@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Tai/Downloads/UnityProjects/MatchSweets/Assembly-CSharp.csproj": {}
+    "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/Assembly-CSharp.csproj": {}
   },
   "projects": {
-    "/Users/Tai/Downloads/UnityProjects/MatchSweets/Assembly-CSharp.csproj": {
+    "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Tai/Downloads/UnityProjects/MatchSweets/Assembly-CSharp.csproj",
+        "projectUniqueName": "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "/Users/Tai/Downloads/UnityProjects/MatchSweets/Assembly-CSharp.csproj",
+        "projectPath": "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/Assembly-CSharp.csproj",
         "packagesPath": "/Users/Tai/.nuget/packages/",
-        "outputPath": "/Users/Tai/Downloads/UnityProjects/MatchSweets/obj/",
+        "outputPath": "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Tai/.nuget/NuGet/NuGet.Config"
