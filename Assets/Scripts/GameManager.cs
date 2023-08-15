@@ -17,6 +17,16 @@ public class GameManager : MonoBehaviour
         COUNT //標記類型
     }
 
+    public Dictionary<SweetsType, GameObject> sweetPrefabDict;
+
+    [System.Serializable]
+    public struct SweetPrefab {
+        public SweetsType type;
+        public GameObject prefab;
+    }
+
+    public SweetPrefab[] sweetPrefabs;
+
     //單例
     private static GameManager _instance;
     public GameManager Instance

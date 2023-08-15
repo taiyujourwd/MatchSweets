@@ -8,24 +8,26 @@
     ".NETStandard,Version=v2.0": []
   },
   "packageFolders": {
-    "/Users/Tai/.nuget/packages/": {}
+    "C:\\Users\\tai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/Assembly-CSharp.csproj",
+      "projectUniqueName": "d:\\gitUnityProjects\\MatchSweets\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/Assembly-CSharp.csproj",
-      "packagesPath": "/Users/Tai/.nuget/packages/",
-      "outputPath": "/Users/Tai/Downloads/UnityProjects/github/MatchSweets/obj/",
+      "projectPath": "d:\\gitUnityProjects\\MatchSweets\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\tai\\.nuget\\packages\\",
+      "outputPath": "d:\\gitUnityProjects\\MatchSweets\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Tai/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\tai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -54,7 +56,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
       }
     }
   }
