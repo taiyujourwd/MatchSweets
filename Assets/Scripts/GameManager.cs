@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
     public Dictionary<SweetsType, GameObject> sweetPrefabDict;
 
     [System.Serializable]
-    public struct SweetPrefab {
+    public struct SweetPrefab
+    {
         public SweetsType type;
         public GameObject prefab;
     }
@@ -41,6 +42,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject gridPrefab;
 
+    //甜品數組
+    private GameSweet[,] sweets;
+
     private void Awake()
     {
         //單例init
@@ -49,12 +53,40 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        //字典實例化
+        sweetPrefabDict = new Dictionary<SweetsType, GameObject>();
+        for (int i = 0; i < sweetPrefabs.Length; i++)
+        {
+            if (!sweetPrefabDict.ContainsKey(sweetPrefabs[i].type))
+            {
+                sweetPrefabDict.Add(sweetPrefabs[i].type, sweetPrefabs[i].prefab);
+            }
+        }
+
         for (int x = 0; x < xColumn; x++)
         {
             for (int y = 0; y < yRow; y++)
             {
                 GameObject chocolate = Instantiate(gridPrefab, CorrectPosition(x, y), Quaternion.identity);
                 chocolate.transform.SetParent(transform);
+            }
+        }
+
+        sweets = new GameSweet[xColumn, yRow];
+        for (int x = 0; x < xColumn; x++)
+        {
+            for (int y = 0; y < yRow; y++)
+            {
+                GameObject newSweet = Instantiate(sweetPrefabDict[SweetsType.NORMAL], Vector3.zero, Quaternion.identity);
+                newSweet.transform.SetParent(transform);
+
+                sweets[x, y] = newSweet.GetComponent<GameSweet>();
+                sweets[x, y].Init(x, y, this, SweetsType.NORMAL);
+
+                if (sweets[x, y].CanMove())
+                {
+                    sweets[x, y].MovedComponent.Move(x, y);
+                }
             }
         }
     }

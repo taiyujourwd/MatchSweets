@@ -413,6 +413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7384e1aebe20e4069bbb749cc183c44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sweetPrefabs:
+  - type: 1
+    prefab: {fileID: 2381983096380976026, guid: acf37cc09a2b54935ab86f3512b600ac, type: 3}
   xColumn: 10
   yRow: 10
   gridPrefab: {fileID: 3527980388791153934, guid: d3b673523c6a743c19cd5a8ee746441a, type: 3}
