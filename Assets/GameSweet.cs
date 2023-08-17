@@ -44,17 +44,31 @@ public class GameSweet : MonoBehaviour
         get { return movedComponent; }
     }
 
+    private ColorSweet coloredComponent;
+    public ColorSweet ColoredComponent
+    {
+        get { return coloredComponent; }
+    }
+
+    public bool CanMove()
+    {
+        return movedComponent != null;
+    }
+
+    public bool CanColor()
+    {
+        return coloredComponent != null;
+    }
+
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
     void Awake()
     {
         movedComponent = GetComponent<MovedSweet>();
+        coloredComponent = GetComponent<ColorSweet>();
     }
-    public bool CanMove()
-    {
-        return movedComponent != null;
-    }
+
 
     [HideInInspector]
     public GameManager gameManager;

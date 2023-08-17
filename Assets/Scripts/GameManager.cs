@@ -87,6 +87,11 @@ public class GameManager : MonoBehaviour
                 {
                     sweets[x, y].MovedComponent.Move(x, y);
                 }
+
+                if (sweets[x, y].CanColor())
+                {
+                    sweets[x, y].ColoredComponent.SetColor((ColorSweet.ColorType)Random.Range(0, sweets[x, y].ColoredComponent.NumColors));
+                }
             }
         }
     }

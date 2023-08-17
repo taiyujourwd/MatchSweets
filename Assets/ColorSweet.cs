@@ -38,7 +38,7 @@ public class ColorSweet : MonoBehaviour
     public ColorType Color
     {
         get { return color; }
-        set { color = value; }
+        set { SetColor(value); }
     }
 
     private void Awake()
